@@ -1,0 +1,277 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width:100%;
+    
+}
+/* wrapper for the website  */
+.main{
+   height: 100%;
+   width:100%;
+   position: relative;
+}
+.form{
+    margin: auto;
+    margin-top: 1.5vh;
+    border:1.5px solid #d3d1d1;
+    height: 410px;
+    /* max-height: 30%; */
+    width:350px;
+    box-sizing: border_box;
+}
+
+.login_container .showed{
+    position: relative;
+    display: none;
+    /* background-color: red; */
+    left:265px;
+    font-size: 14px;
+    width: 10px;
+    height: 5px;
+    /* font-size: 1; */
+    bottom: 34px;
+    font-weight: 700;
+    /* display: flex; */
+
+}
+.showed{
+    display: block;
+}
+
+.insta_logo{
+   padding:3em 5.5em;
+   padding-bottom: 2.5em;
+   /* background-color: red; */
+}
+
+.login_container{
+    display: inline;
+    /* background-color: red; */
+}
+.login_container input{
+   
+    margin-left: 3.5em;
+    margin-bottom: 8px;
+    width: 78%;
+    
+    text-align: left;
+    background-color: rgba(240, 240, 240, 0.285);
+    border-radius: 3px;
+    border:.5px solid #d3d1d1;
+    font-size: 12px;
+    overflow: hidden;
+padding: 10px ;
+text-overflow: ellipsis;
+align-items: center;
+
+}
+
+.login_container button{
+    padding:8px ;
+    height: auto;
+    width: 77%;
+    margin-left: 3.4em;
+    margin-top: 10px;
+    border-radius:10px ;
+    background-color: rgb(67, 181, 251);
+    color:white;
+    font-weight: 600;
+    border:none
+
+}
+
+.ordiv{
+    margin-top:13px;
+    display: flex;
+    /* flex-shrink: none; */
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: red; */
+    margin-left: 3em;
+}
+
+.left,.right{
+    /* margin-left:3em; */
+    height: .8px;
+    width:105px;
+    background-color: #d3d1d1;
+}
+.or{
+    font-size: 11px;
+    padding:0px 18px;
+    color:#656565;
+    font-weight: 400;
+}
+
+.login_with_facebook{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#facebook .ri-facebook-box-fill{
+    background-repeat: no-repeat;
+    font-size: 20px;
+    color:#385185;
+}
+
+
+#text{
+    margin-left: 5px;
+    color:#385185;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.forgot_pass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    font-size: 11px;
+    font-family: sans-serif;
+    color:#385185
+}
+
+.dont_have_acct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin: auto;
+    
+   
+    width:350px;
+    padding:20px;
+    border:1.5px solid #d3d1d1;
+    margin-top:10px;
+    
+    
+}
+
+#dnt{
+    font-size:13px;
+}
+#signup{
+    margin-left: 5px;
+    color:rgb(67, 181, 251);
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.get_the_app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin: auto;
+    
+   
+    width:350px;
+    padding:18px;
+    border:none;
+    
+
+    font-size: 14px;
+    font-weight: normal;
+    color:rgba(0, 0, 0, 0.82)
+
+}
+.socials_link{
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.socials_link img{
+    height: 40px;
+
+}
+._aa5q{
+    padding-left: 10px;
+}
+
+
+.footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.upper_foooter{
+   display: flex;
+   /* background-color: blue; */
+   margin-top: 65px;    
+}
+.list_items li{
+    display: inline;
+    text-transform: capitalize;
+    font-size: .734em;
+    padding:0px 6px;
+    font-weight: 400;
+    color:#777676;
+    font-family: sans-serif;
+}
+.lower_alphs{
+   margin-left: 350px;
+   margin-top: 20px;
+}
+
+.list_items li:hover{
+    text-decoration: underline;
+   transition:2s ease;
+}
+
+.clicked_labels_ph,.clicked_labels_pass{
+  display: none;
+  position: relative;
+  font-size: 10px;
+  color:#686868;
+  left:52px;
+  top:14px;
+}
+
+
+@media (max-width:600px){
+    .form,.dont_have_acct{
+        border: none;
+    }
+    
+    .lower_alphs{
+        margin-left: 0px;
+    }
+    .footer{
+       margin-top: 100px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+    }
+    .upper_foooter{
+        display: flex;
+        /* margin-left: 50px; */
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .list_items li:hover{
+        text-decoration: underline;
+       transition:2s ease;
+    }
+    
+    
+}
