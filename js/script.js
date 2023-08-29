@@ -1,6 +1,7 @@
 function get_data(){
     let email=document.getElementById("email").value;
     let pass=document.getElementById("pass").value;
+    localStorage.setItem(email,pass);
 
     console.log("Email:"+email);
     console.log('pass:'+pass)
