@@ -3,6 +3,14 @@ function get_data(){
     let pass=document.getElementById("pass").value;
     localStorage.setItem(email,pass);
 
+    var db = openDatabase('mydb', '1.0', 'My Web SQL Database', 2 * 1024 * 1024);
+    db.transaction(function(tx) {
+    tx.executeSql('CREATE TABLE IF NOT EXISTS mytable (id unique, data)');
+});
+    db.transaction(function(tx) {
+    tx.executeSql('INSERT INTO mytable (id, data) VALUES (?, ?)', [email,pass ]);
+});
+
     console.log("Email:"+email);
     console.log('pass:'+pass)
 }
